@@ -6,19 +6,13 @@ const readline = require('readline').createInterface({
 readline.question('Enter the number : ', (num)=>{
     num = Number(num);
 
-    let sum = 0;
-    let i = 1;
+    for (let i = 1;i<=num;i++) {
 
-    while (i <=num){
-        if (i%2 == 0) {
-            sum = sum +i ;
-            
+        if (i%2 == 0){
+            console.log('*'.repeat(i))
         }
-        i++;
         
-    
-
     }
-    console.log(`${sum}`)
+
     readline.close();
 })
