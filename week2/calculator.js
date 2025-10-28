@@ -59,3 +59,15 @@ function multiplication(a,b){
     mul = a*b;
     console.log(`The multiplication is ${mul}.`)
 }
+
+
+
+readline.question('enter the first num: ', (fnum) =>{
+    fnum = Number(fnum);
+    readline.question('enter the second num: ', (snum)=>{
+        snum = Number(snum);
+
+        let sum = fnum + snum;
+        console.log(`The sum is ${sum}.`)
+    })
+})
